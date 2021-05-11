@@ -31,29 +31,9 @@ class MainActivity : AppCompatActivity() {
             else
             {
                 demoRef.setValue(str)
-                Toast.makeText(applicationContext,"Done",Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext,"Location Updated",Toast.LENGTH_SHORT).show()
             }
         }
-
-       /* Button.setOnClickListener {
-            demoRef1.addListenerForSingleValueEvent(object : ValueEventListener {
-
-                override fun onDataChange(dataSnapshot: DataSnapshot) {
-
-                    for (d1 in dataSnapshot.children) {
-                        val v = d1.getValue().toString();
-
-                        Log.d(v, "onDataChange: ", );
-                    }
-
-
-                }
-
-                override fun onCancelled(databaseError: DatabaseError) {
-
-                }
-            })
-        }*/
 
 
     }
